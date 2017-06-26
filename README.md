@@ -7,7 +7,7 @@ In this project we find Lane lines from a given video of a road, frame by frame.
 
 # Pipeline
 
--> Convert each frame into grayscale for edge detection purposes.
+-> Convert each frame into HSV colorspace, because in well lit environments it's easy to separate different colors but in case of low lit    conditions such as in the part of the challenge video where there is shadow it is difficult to separate white and yellow lines which      are generally the colors used for lanes. Hence transforming them to HSV makes it easier to separate them as lane lines. This is then      converted   to grayscale for edge detection purposes.
 
 -> Choose an appropriate kernel size.(Here i have used 5) and apply gaussian filter to smooth the image.
 
