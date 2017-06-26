@@ -18,3 +18,9 @@ In this project we find Lane lines from a given video of a road, frame by frame.
 -> Iterate over the set of lines obtained and separate them to left and right lane lines using the slope of the lines as the deciding        parameter. 
 
 -> Using the set of right and left lane lines, obtain minimum and maximum (x,y) co-ordinates and draw lane lines between these points.
+
+# Reflection
+
+The short coming of this project is that while it's quite decent in recognizing lane lines, it works only in bright light conditions. As you can see from the results of my project on the challenge video, it only recognises parts of the left lane when there is a shadow. Also this project does not work on very curvy roads such as the ones you find while driving up/down the hill.
+
+There is definitely lot of room for improvement for this project. One main improvement would be to obtain region of interest for all kinds of roads dynamically which makes it quite applicable to many situations. Once I am familiar with more advanced concepts in computer vision I will definitely get back to this project and modify it for the better. 
